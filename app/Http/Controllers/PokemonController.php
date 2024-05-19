@@ -64,7 +64,7 @@ class PokemonController extends Controller
         }
         else
 
-        Log::warning("Pokémon no encontrado: {$terminoBusqueda}");
+        //Log::warning("Pokémon no encontrado: {$terminoBusqueda}");
        // Obtener las últimas 10 búsquedas exitosas
        $historial = Historial_Busquedas::where('id_sesion', $idSesion)
        ->orderBy('created_at', 'desc')
