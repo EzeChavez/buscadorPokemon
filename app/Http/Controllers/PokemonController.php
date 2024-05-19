@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
-use App\Models\Historial_Busquedas;
-
+use App\Models\Historial_busquedas;
+ 
 class PokemonController extends Controller
 {
     public function buscar(Request $request)
@@ -41,7 +41,7 @@ class PokemonController extends Controller
             }
 
             // Guardar el historial en la base de datos
-            Historial_Busquedas::create([
+            Historial_busquedas::create([
                 'termino_busqueda' => $terminoBusqueda,
                 'resultado' => json_encode($habilidades),
                 'id_sesion' => $idSesion,
@@ -66,7 +66,7 @@ class PokemonController extends Controller
 
         //Log::warning("Pokémon no encontrado: {$terminoBusqueda}");
        // Obtener las últimas 10 búsquedas exitosas
-       $historial = Historial_Busquedas::where('id_sesion', $idSesion)
+       $historial = Historial_busquedas::where('id_sesion', $idSesion)
        ->orderBy('created_at', 'desc')
        ->take(10)
        ->get();
