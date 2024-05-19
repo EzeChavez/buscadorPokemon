@@ -27,4 +27,7 @@
     </div>
 
 </body>
+<footer>
+    <p>Hecho con ❤️ por <a href="www.linkedin.com/in/sergio-ezequiel-chavez-491580215" target="_blank">Eze Chavez</a></p>
+</footer>
 </html>
