@@ -28,6 +28,6 @@
 
 </body>
 <footer>
-    <p>Hecho con ❤️ por <a href="www.linkedin.com/in/sergio-ezequiel-chavez-491580215" target="_blank"><b>Eze Chavez</b></a></p>
+    <p>AppWeb desarrollada por <a href="www.linkedin.com/in/sergio-ezequiel-chavez-491580215" target="_blank"><b>Eze Chavez</b></a></p>
 </footer>
 </html>
