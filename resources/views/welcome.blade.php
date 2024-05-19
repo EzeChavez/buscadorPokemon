@@ -20,7 +20,7 @@
         <div id="resultado"></div>
         <div class="pokemon-card" id="loading-card">
             <img src="https://via.placeholder.com/100?text=?" alt="cargando" />
-            <h3>Buscando....</h3>
+            <h3>Buscando...</h3>
         </div>
         <h3>Historial de Búsqueda</h3>
         <ul id="historial"></ul>
