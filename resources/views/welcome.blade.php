@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" id="entrada-pokemon" placeholder="Ingresa el nombre del Pokémon" />
+        <input type="text" id="entrada-pokemon" placeholder="Busca un Pokémon" />
         <button id="boton-buscar" onclick="buscarPokemon()">
             <i class="fas fa-search"></i>
         </button>
