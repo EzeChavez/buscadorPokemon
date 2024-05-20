@@ -28,6 +28,7 @@
 
 </body>
 <footer>
-    <p>AppWeb desarrollada por <a href="www.linkedin.com/in/sergio-ezequiel-chavez-491580215" target="_blank"><b>Eze Chavez</b></a></p>
+    <p>AppWeb desarrollada por <a href="https://linkedin.com/in/sergio-ezequiel-chavez-491580215" target="_blank"><b>Eze Chavez</b></a></p><br>
+    <p>Repositorio disponible en <a href="https://github.com/EzeChavez/buscadorPokemon" target="_blank"><b>GitHub</b></a></p>
 </footer>
 </html>

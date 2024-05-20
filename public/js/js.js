@@ -123,9 +123,9 @@ function listarHistorial(historial) {
     const listaHistorial = document.getElementById('historial');
     listaHistorial.innerHTML = ''; // Limpiar el historial actual
 
-    historial.forEach(item => {
+    historial.forEach((item, index) => {
         const li = document.createElement('li');
-        li.innerHTML = `<a href="#" onclick="buscarDeNuevo('${item.termino_busqueda}')">${item.termino_busqueda}</a>`;
+        li.innerHTML = `${index + 1}. <a href="#" onclick="buscarDeNuevo('${item.termino_busqueda}')">${item.termino_busqueda}</a>`;
         listaHistorial.appendChild(li);
     });
 }

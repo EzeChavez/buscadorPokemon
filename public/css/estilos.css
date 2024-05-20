@@ -28,12 +28,9 @@
     }
     #app {
         text-align: center;
+        margin-bottom: 80px;
     }
-    #entrada-pokemon {
-        width: 200px;
-        padding: 10px;
-        font-size: 16px;
-    }
+ 
 
     .pokemon-card img {
         width: 100px;
@@ -68,10 +65,13 @@
 #boton-buscar i {
     font-size: 16px;
 }
+
 #historial {
-    list-style: none;
+    columns: 2; /* Crea dos columnas */
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style: none; /* Elimina los estilos de lista predeterminados */
     padding: 0;
-    margin: 20px 0;
 }
 
 #historial li {
@@ -80,8 +80,7 @@
     border-radius: 5px;
     padding: 10px 15px;
     margin-bottom: 10px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    cursor: pointer;
+    break-inside: avoid-column; /* Evita que los elementos se dividan entre columnas */
 }
 
 #historial li:hover {
@@ -96,10 +95,10 @@
 }
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #333;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
